@@ -1,10 +1,42 @@
 import React from 'react'
-
+import Link from 'next/link'
 //Internal Import 
 import Style from "./HelpCenter.module.css"
+
 const HelpCenter = () => {
+  const helpcenter = [
+    {
+      name: "About",
+      link : "about"
+    },
+    {
+      name: "Contact Us",
+      link : "contact-us"
+    },
+    {
+      name: "Sign Up",
+      link : "sign-up"
+    },
+    {
+      name: "Sign In",
+      link : "sign-in"
+    },
+    {
+      name: "Subscription",
+      link : "subscription"
+    },
+
+  ];
   return (
-    <div>HelpCenter</div>
+    <div className={Style.box}>
+      {
+        helpcenter.map((el,i)=>(
+          <div key= {i+1} className={Style.helpcenter}>
+            <Link href={{pathname:`${el.link}`}}>{el.name}</Link>
+          </div>
+        ))
+      }
+    </div>
   )
 }
 

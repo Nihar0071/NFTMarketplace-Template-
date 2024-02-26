@@ -100,7 +100,7 @@ const NavBar = () => {
 
           {/* HelpCenter */}
           <div className={Style.navbar_container_right_helpcenter}>
-            <p onClick={(e)=> openMenu(e)}> Help Center</p>
+            <p onClick={(e)=> openMenu(e)}> HelpCenter</p>
             {isHelpCenteropen && (
               <div className={Style.navbar_container_right_helpcenter_box}>
                 <HelpCenter />
@@ -110,7 +110,7 @@ const NavBar = () => {
 
           {/* Notification Bar */}
           <div className={Style.navbar_container_right_notifications}>
-            <MdNotifications className={Style.notify} onClick={()=> openNotifications}/>
+            <MdNotifications className={Style.notify} onClick={()=> openNotifications()}/>
             {isNotificationsopen && <Notification/>}
           </div>
           {/* Create Button Sections  */}
