@@ -115,7 +115,7 @@ const NavBar = () => {
           </div>
           {/* Create Button Sections  */}
           <div className={Style.navbar_right_button}>
-            <Button btnText="Create"/>
+            <Button btnText="Create" handleClick={()=>{}}/>
           </div>
           {/* USER Profile */}
           <div className={Style.navbar_container_right_profile_box}>

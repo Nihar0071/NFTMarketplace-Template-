@@ -93,7 +93,7 @@ const Sidebar = ({setopensidemenu}) => {
       <GrClose
       className={Style.sideBar_closeBtn}
       onClick={() => closeSideBar()}
-      />
+      /> 
       <div className={Style.sideBar_box}>
         <Image src={images.logo} alt='logo' width={150} height={150}/>
         <p> Discover the most outstanding articles related to NFT's and Crypto</p>
@@ -146,8 +146,8 @@ const Sidebar = ({setopensidemenu}) => {
  
       </div>
       <div className={Style.sideBar_button}>
-        <Button btnName = "Create"/>
-        <Button btnName = "Connect Wallet"/>
+        <Button btnName = "Create" handleClick={()=> {}}/>
+        <Button btnName = "Connect Wallet" handleClick={()=>{}}/>
       </div>
     </div>
   )
