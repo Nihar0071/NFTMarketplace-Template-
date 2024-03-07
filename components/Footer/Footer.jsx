@@ -32,6 +32,7 @@ const Footer = () => {
                   <TiSocialYoutube/>
                 </a>
             </div>
+        </div>
             <div className={Style.footer_box_discover}>
               <h3>Discover</h3>
               <Discover/>
@@ -53,7 +54,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-        </div>
+        
       </div>
     </div>
   )

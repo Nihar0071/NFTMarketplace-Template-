@@ -1,5 +1,5 @@
 .footer{
-    width: 200%;
+    width: 100%;
     padding-block: 1.5rem;
     position: relative;
 }
@@ -7,13 +7,11 @@
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.3fr repeat(2,1fr) 2fr;
+    grid-template-columns: 1.3fr repeat(2,.5fr) 2fr; 
     align-items: flex-start;
     justify-content: space-between;
     gap: 3rem;
 } 
-
-
 .footer_social{
     display: flex;
     gap: 1.3rem;
@@ -22,7 +20,7 @@
 }
 .footer_social a{
     display: grid;
-    padding: 2rem;
+    padding: .5rem;
     transition: all .3s ease-in;
     border-radius: 50%;
 }
@@ -39,7 +37,7 @@
     padding: 1.5rem 2rem;
     background-color: var(--icons-color);
     color: var(--shadow-dark-color);
-    border-radius: 50%;
+    border-radius: 5rem;
     margin-top: 3rem;
 }
 
